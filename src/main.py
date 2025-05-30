@@ -1,9 +1,12 @@
 from textnode import TextNode, TextType
+from htmlnode import HTMLNode
+
+dict = {"alt": "some text on the node", "target": "_blank"}
 
 
 def main():
-    test = TextNode("This is some anchor text", TextType.LINK, "http://boot.dev.com")
-    print(test)
+    HtmlNodeTest = HTMLNode("p", "Hello world!", None, dict)
+    print(f"-{HtmlNodeTest.props_to_html()}-")
 
 
 if __name__ == "__main__":

@@ -33,6 +33,10 @@ class TestTextNode(unittest.TestCase):
         node = TextNode("foo", TextType.BOLD)
         assert repr(node) == "TextNode(foo, bold, None)"
 
+    def test_repr_with_url(self):
+        node = TextNode("foo", TextType.LINK, "http://testurl.com")
+        assert repr(node) == "TextNode(foo, link, http://testurl.com)"
+
 
 if __name__ == "__main__":
     unittest.main()
