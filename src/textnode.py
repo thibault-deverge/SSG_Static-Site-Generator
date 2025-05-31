@@ -5,7 +5,7 @@ from enum import Enum
 class TextType(Enum):
     """Inline text kinds for Markdown-to-HTML rendering."""
 
-    NORMAL = "normal"
+    TEXT = "text"
     BOLD = "bold"
     ITALIC = "italic"
     CODE = "code"
