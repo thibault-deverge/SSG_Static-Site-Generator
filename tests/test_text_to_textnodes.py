@@ -1,7 +1,7 @@
 import unittest
 from src.enums import TextType
 from src.textnode import TextNode
-from src.utils.converters import text_to_textnodes
+from src.utils.converters_textnode import text_to_textnodes
 
 
 class TestTextToTextnodes(unittest.TestCase):

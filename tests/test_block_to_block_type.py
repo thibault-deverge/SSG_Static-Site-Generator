@@ -1,6 +1,6 @@
 import unittest
 from src.enums import BlockType
-from src.utils.converters import block_to_block_type
+from src.utils.converters_type import block_to_block_type
 
 
 class TestTextToTextnodes(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from src.utils.converters import markdown_to_blocks
+from src.utils.converters_blocks import markdown_to_blocks
 
 
 class TestTextNodeToHtmlNode(unittest.TestCase):
