@@ -1,11 +1,24 @@
-from utils.converters_type import block_to_block_type
+from src.utils.converters_blocks import markdown_to_html_node
 
 
 def main():
-    test_heading = ""
+    md1 = """This is **bolded** paragraph
+text in a p
+tag here
 
-    result = block_to_block_type(test_heading)
-    print(result)
+This is another paragraph with _italic_ text and `code` here
+"""
+
+    node = markdown_to_html_node(md1)
+
+    print("-----------")
+    md2 = """
+```
+This is text that _should_ remain
+the **same** even with inline stuff
+```
+"""
+    node2 = markdown_to_html_node(md2)
 
 
 if __name__ == "__main__":
