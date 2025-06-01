@@ -1,21 +1,8 @@
 from typing import Optional
-from enum import Enum
-
-
-class TextType(Enum):
-    """Inline text kinds for Markdown-to-HTML rendering."""
-
-    TEXT = "text"
-    BOLD = "bold"
-    ITALIC = "italic"
-    CODE = "code"
-    LINK = "link"
-    IMAGE = "image"
+from src.enums import TextType
 
 
 class TextNode:
-    """An inline Markdown text to render as HTML."""
-
     def __init__(self, text: str, text_type: TextType, url: Optional[str] = None):
         self.text = text
         self.text_type = text_type

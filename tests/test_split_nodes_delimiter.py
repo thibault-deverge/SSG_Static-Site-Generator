@@ -1,8 +1,8 @@
 import unittest
 
-from src.htmlnode import ParentNode, LeafNode
-from src.textnode import TextNode, TextType
-from src.utils import split_nodes_delimiter
+from src.enums import TextType
+from src.textnode import TextNode
+from src.utils.splitters import split_nodes_delimiter
 
 
 class TestSplitNodesDelimiter(unittest.TestCase):
