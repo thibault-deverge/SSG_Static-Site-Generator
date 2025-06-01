@@ -2,11 +2,18 @@ from enum import Enum
 
 
 class TextType(Enum):
-    """Inline text kinds for Markdown-to-HTML rendering."""
-
     TEXT = "text"
     BOLD = "bold"
     ITALIC = "italic"
     CODE = "code"
     LINK = "link"
     IMAGE = "image"
+
+
+class BlockType(Enum):
+    PARAGRAPH = "paragraph"
+    HEADING = "heading"
+    CODE = "code"
+    QUOTE = "quote"
+    UNORDERED_LIST = "ul"
+    ORDERED_LIST = "ol"

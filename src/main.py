@@ -1,15 +1,24 @@
-from src.enums import TextType
-from src.textnode import TextNode, TextType
-from src.utils.converters import text_to_textnodes
-from src.utils.splitters import split_nodes_link
-
-import pprint
+from src.utils.converters import block_to_block_type
 
 
 def main():
-    test_str = "This is **text** with an _italic_ word and a `code block` and an ![obi wan image](https://i.imgur.com/fJRm4Vk.jpeg) and a [link](https://boot.dev)"
+    #     test_markdown = """
+    # # This is a heading
 
-    pprint.pp(text_to_textnodes(test_str))
+    # This is a paragraph of text. It has some **bold** and _italic_ words inside of it.
+
+    # - This is the first list item in a list block
+    # - This is a list item
+    # - This is another list item
+    # """
+
+    #     result = markdown_to_blocks(test_markdown)
+    #     print(result)
+
+    test_heading = ""
+
+    result = block_to_block_type(test_heading)
+    print(result)
 
 
 if __name__ == "__main__":
