@@ -6,10 +6,15 @@ from src.generate_page import generate_page, generate_page_recursive
 
 
 def main():
+    if sys.argv[1]:
+        basepath = sys.argv[1]
+    else:
+        basepath = "/"
+
     try:
-        copy_directory("static", "public")
+        copy_directory("static", "docs")
         print("-------------------------")
-        generate_page_recursive("content/", "template.html", "public")
+        generate_page_recursive("content/", "template.html", "docs", basepath)
     except Exception as e:
         print("Error :", e)
         sys.exit(1)

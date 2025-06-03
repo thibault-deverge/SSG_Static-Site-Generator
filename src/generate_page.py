@@ -12,7 +12,7 @@ def write_file_ensuring_dir(filepath: str, content: str) -> None:
         f.write(content)
 
 
-def generate_page(from_path, template_path, dest_path):
+def generate_page(from_path, template_path, dest_path, basepath):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
 
     if not os.path.exists(from_path):
@@ -31,19 +31,21 @@ def generate_page(from_path, template_path, dest_path):
     title = extract_title(markdown_content)
 
     # 3. Populate template and write the html file
-    page_content = template_content.replace("{{ Title }}", title).replace(
-        "{{ Content }}", html_string
-    )
+    page_content = template_content.replace("{{ Title }}", title)
+    page_content = page_content.replace("{{ Content }}", html_string)
+    page_content = page_content.replace('href="/', f'href="{basepath}')
+    page_content = page_content.replace('src="/', f'src="{basepath}')
+    print(page_content)
     write_file_ensuring_dir(dest_path, page_content)
 
 
-def generate_page_recursive(dir_path_content, template_path, dest_dir_path):
+def generate_page_recursive(dir_path_content, template_path, dest_dir_path, basepath):
     for entry in os.listdir(dir_path_content):
         full_path = os.path.join(dir_path_content, entry)
         rel_src = os.path.relpath(full_path, start="content")
 
         if os.path.isfile(full_path):
             dest_path = os.path.join(dest_dir_path, rel_src).replace(".md", ".html")
-            generate_page(full_path, template_path, dest_path)
+            generate_page(full_path, template_path, dest_path, basepath)
         else:
-            generate_page_recursive(full_path, template_path, dest_dir_path)
+            generate_page_recursive(full_path, template_path, dest_dir_path, basepath)
