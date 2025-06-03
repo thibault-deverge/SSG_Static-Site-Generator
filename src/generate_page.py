@@ -15,6 +15,11 @@ def write_file_ensuring_dir(filepath: str, content: str) -> None:
 def generate_page(from_path, template_path, dest_path):
     print(f"Generating page from {from_path} to {dest_path} using {template_path}")
 
+    if not os.path.exists(from_path):
+        raise FileNotFoundError(f"Source markdown not found: {from_path!r}")
+    if not os.path.exists(template_path):
+        raise FileNotFoundError(f"Template not found: {template_path!r}")
+
     # 1. Open and read the markdown and template
     with open(from_path, "r", encoding="utf-8") as file:
         markdown_content = file.read()
@@ -30,3 +35,15 @@ def generate_page(from_path, template_path, dest_path):
         "{{ Content }}", html_string
     )
     write_file_ensuring_dir(dest_path, page_content)
+
+
+def generate_page_recursive(dir_path_content, template_path, dest_dir_path):
+    for entry in os.listdir(dir_path_content):
+        full_path = os.path.join(dir_path_content, entry)
+        rel_src = os.path.relpath(full_path, start="content")
+
+        if os.path.isfile(full_path):
+            dest_path = os.path.join(dest_dir_path, rel_src).replace(".md", ".html")
+            generate_page(full_path, template_path, dest_path)
+        else:
+            generate_page_recursive(full_path, template_path, dest_dir_path)
