@@ -2,7 +2,15 @@
 
 A lightweight Python-based tool that transforms Markdown content into a clean, static HTML website. Whether you want to share personal notes, publish a blog, or create simple documentation, this generator takes raw Markdown files and produces attractive, responsive HTML pages along with your chosen layout and styles.
 
-- Demo URL of the website generated from .md files in '/content' : [Live Demo](https://thibault-deverge.github.io/SSG_Static-Site-Generator/)
+## What Is This?
+
+This is a **Static Site Generator (SSG)** written in Python.  
+Its purpose is simple:  
+➡️ **You write Markdown files** (`.md`) in the 'content' folder
+➡️ The generator **converts them into a complete HTML website** in the 'docs' folder
+
+🔗 **Live Demo Exemple (generated with this tool):**  
+[https://thibault-deverge.github.io/SSG_Static-Site-Generator/](https://thibault-deverge.github.io/SSG_Static-Site-Generator/)
 
 ## Why Use This SSG?
 

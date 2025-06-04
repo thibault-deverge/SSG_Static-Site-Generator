@@ -17,11 +17,12 @@ At 42, there are no teachers, no traditional courses — just real-world coding 
 
 ## Projects I’m proud of
 
-1. 🎮 **ft_transcendence** – A full-stack multiplayer Pong game (SPA) with Django, custom router, chat & OAuth2 - [repository](https://github.com/thibault-deverge/42-Cursus__Ft-Transcendence)
-2. 🐚 **minishell** – A custom shell with process handling, pipes, and signals - [repository](https://github.com/thibault-deverge/42-Cursus__Minishell)
-3. 🧱 **Cub3d** – A raycasting-based 3D game engine in C, inspired by _Wolfenstein 3D_, with custom map parsing, texture mapping, and basic physics – [repository](https://github.com/thibault-deverge/42-Cursus__Cub3d)
-4. 🧠 **push_swap** – Sorting algorithm visualizer optimized for minimal instruction sets [repository](https://github.com/thibault-deverge/42-Cursus__Push_Swap)
-5. 📦 **pipex**, **libft**, **philo**, **ft_printf** – Low-level C tools built from scratch
+1. 💰 **finance_app** – A full-stack personal finance manager built with Next.js 15, TypeScript, Tailwind, Prisma & PostgreSQL. It includes budgets, saving pots, transactions, recurring bills, and full CRUD with authentication – [repository](https://github.com/thibault-deverge/finance_app) / [live demo](https://finance-app-peach-five.vercel.app)
+2. 🎮 **ft_transcendence** – A full-stack multiplayer Pong game (SPA) with Django, custom router, chat & OAuth2 - [repository](https://github.com/thibault-deverge/42-Cursus__Ft-Transcendence)
+3. 🐚 **minishell** – A custom shell with process handling, pipes, and signals - [repository](https://github.com/thibault-deverge/42-Cursus__Minishell)
+4. 🧱 **Cub3d** – A raycasting-based 3D game engine in C, inspired by _Wolfenstein 3D_, with custom map parsing, texture mapping, and basic physics – [repository](https://github.com/thibault-deverge/42-Cursus__Cub3d)
+5. 🧠 **push_swap** – Sorting algorithm visualizer optimized for minimal instruction sets [repository](https://github.com/thibault-deverge/42-Cursus__Push_Swap)
+6. 📦 **pipex**, **libft**, **philo**, **ft_printf** – Low-level C tools built from scratch
 
 ## Blog
 
