@@ -52,6 +52,9 @@ A lightweight Python-based tool that transforms Markdown content into a clean, s
 
    - This command clears any existing `docs/` folder, copies all files from `static/` into `docs/`, and converts every Markdown file under `content/` into an HTML page under `docs/`.
 
+   ⚠️ Important if you're deploying with GitHub Pages:
+   Make sure the path passed in build.sh matches your repository name if you're using a custom GitHub Pages subfolder.
+
 4. **Preview Locally** (Optional)
 
    ```bash
