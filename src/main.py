@@ -1,8 +1,7 @@
 import sys
 
 from src.utils.copy_utils import copy_directory
-from src.utils.extracters import extract_title
-from src.generate_page import generate_page, generate_page_recursive
+from src.generate_page import generate_page_recursive
 
 
 def main():

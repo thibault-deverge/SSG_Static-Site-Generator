@@ -1,3 +1,9 @@
 set -e
 
-python3 -m src.main "/SSG_Static-Site-Generator/"
+if [ -z "$1" ]; then
+  BASEPATH="/${SSG_Static-Site-Generator}/"
+else
+  BASEPATH="$1"
+fi
+
+python3 -m src.main "$BASEPATH"
