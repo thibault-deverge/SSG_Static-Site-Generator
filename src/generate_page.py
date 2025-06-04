@@ -33,8 +33,8 @@ def generate_page(from_path, template_path, dest_path, basepath):
     # 3. Populate template and write the html file
     page_content = template_content.replace("{{ Title }}", title)
     page_content = page_content.replace("{{ Content }}", html_string)
-    page_content = page_content.replace('href="/', f'href="{basepath}')
     page_content = page_content.replace('src="/', f'src="{basepath}')
+    page_content = page_content.replace('href="/', f'href="{basepath}')
     print(page_content)
     write_file_ensuring_dir(dest_path, page_content)
 
