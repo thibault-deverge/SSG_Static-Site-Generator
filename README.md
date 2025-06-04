@@ -38,6 +38,7 @@ A lightweight Python-based tool that transforms Markdown content into a clean, s
    ├── docs/                # Generated output (HTML, CSS, images)
    ├── tests/               # Unit tests for conversion logic
    ├── build.sh             # Builds site into docs/
+   ├── main.sh              # Builds site into docs and start local server/
    └── test.sh              # Runs unit tests
    ```
 
