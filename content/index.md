@@ -1,46 +1,39 @@
-# Tolkien Fan Club
+# From 42 to Full-Stack Development
 
-![JRR Tolkien sitting](/images/tolkien.png)
+![42 logo](/images/42.png)
 
-Here's the deal, **I like Tolkien**.
+Hi, I'm Thibault — a full-stack web developer trained at [École 42](https://42.fr/en/homepage/), an intensive and peer-led programming school built on autonomy, resilience, and project-based learning.
 
-> "I am in fact a Hobbit in all but size."
->
-> -- J.R.R. Tolkien
+At 42, there are no teachers, no traditional courses — just real-world coding challenges tackled through collaboration and experimentation. Over the course of the program, I went from writing memory-safe C libraries to deploying full-stack applications with authentication, real-time features, and containerized services. This experience not only shaped my technical foundation but also taught me how to learn fast, adapt, and ship working software under pressure.
 
-## Blog posts
+## Why 42?
 
-- [Why Glorfindel is More Impressive than Legolas](/blog/glorfindel)
-- [Why Tom Bombadil Was a Mistake](/blog/tom)
-- [The Unparalleled Majesty of "The Lord of the Rings"](/blog/majesty)
+- Peer-to-peer learning: progress through collaboration, not instruction
+- Real projects: every milestone mimics real-world development
+- Autonomy: you manage your time, your work, and your learning
+- Resilience: it’s intense — and that’s the point
 
-## Reasons I like Tolkien
+42 isn't just a school, it's a professional bootcamp that shapes developers ready for real challenges.
 
-- You can spend years studying the legendarium and still not understand its depths
-- It can be enjoyed by children and adults alike
-- Disney _didn't ruin it_ (okay, but Amazon might have)
-- It created an entirely new genre of fantasy
+## Projects I’m proud of
 
-## My favorite characters (in order)
+1. 🎮 **ft_transcendence** – A full-stack multiplayer Pong game (SPA) with Django, custom router, chat & OAuth2 - [repository](https://github.com/thibault-deverge/42-Cursus__Ft-Transcendence)
+2. 🐚 **minishell** – A custom shell with process handling, pipes, and signals - [repository](https://github.com/thibault-deverge/42-Cursus__Minishell)
+3. 🧱 **Cub3d** – A raycasting-based 3D game engine in C, inspired by _Wolfenstein 3D_, with custom map parsing, texture mapping, and basic physics – [repository](https://github.com/thibault-deverge/42-Cursus__Cub3d)
+4. 🧠 **push_swap** – Sorting algorithm visualizer optimized for minimal instruction sets [repository](https://github.com/thibault-deverge/42-Cursus__Push_Swap)
+5. 📦 **pipex**, **libft**, **philo**, **ft_printf** – Low-level C tools built from scratch
 
-1. Gandalf
-2. Bilbo
-3. Sam
-4. Glorfindel
-5. Galadriel
-6. Elrond
-7. Thorin
-8. Sauron
-9. Aragorn
+## Blog
 
-Here's what `elflang` looks like (the perfect coding language):
+- [Breaking Bad and the Art of Long-Term Storytelling in Code & TV](/blog/breakingbad)
+- [3 funny tech stories](/blog/stories)
 
-```
-func main(){
-    fmt.Println("Aiya, Ambar!")
-}
-```
+## Get in touch
 
-Want to get in touch? [Contact me here](/contact).
+- 🌐 [Portfolio](https://thibault-deverge.vercel.app/)
+- 💻 [GitHub](https://github.com/thibault-deverge)
+- 🧑‍💼 [LinkedIn](www.linkedin.com/in/thibault-deverge)
 
-This site was generated with a custom-built [static site generator](https://www.boot.dev/courses/build-static-site-generator-python) from the course on [Boot.dev](https://www.boot.dev).
+---
+
+This site was generated with a static site generator I built in Python, can find more about it [here](https://github.com/thibault-deverge/SSG_Static-Site-Generator)
